@@ -7,7 +7,7 @@
     <style>
         h1 {
             text-align: center;
-            margin-top: 232px;
+            margin-top: 170px;
             font-family:'Roboto';
             font-style: normal; 
             font-weight:400;
@@ -28,7 +28,10 @@
             padding: 0 140px 0 48px;
             font-size: 16px;
         }
-        button{
+        input:hover{
+            box-shadow: 1px 1px 5px gray;
+        }
+        .under-input{
             width: 111px;
             height: 36px;
             left: 471px;
@@ -37,6 +40,14 @@
             background: #F8F9FA;
             border: 1px solid #F8F9FA; 
             border-radius:4px; 
+            cursor:pointer; 
+        }
+        
+        .under-input:hover{
+            /*border-style:solid;
+            border-color:black;
+            border-width: 1px;*/
+            box-shadow: 0.5px 0.5px 5px gray;
         }
         .button-box{
             display : flex; 
@@ -44,19 +55,112 @@
             margin-top:26px;
             align-items: center;
         }
+        li{
+            display:inline;
+            float:right;
+            margin-right:5px;
+        }
+
+        .google-app {
+            font-size: 17px;
+            color: rgb(95,99,104); /* 아이콘의 색 */
+            padding: 10px 11px; /* hover에서 뒷배경 사이즈, 가로 세로 비율 맞추려고 10, 11 */
+            border-radius: 50%; /* hover에서 뒷배경 원 설정 */
+        }
+        
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: white;
+        /* border-bottom: 1px solid #e0e0e0; */
+    }
+
+    .navbar-right a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #5f6368;
+        font-size: 14px;
+    }
+    .navbar-right a:hover{
+        text-decoration: underline;
+
+    }
+    .login-button {
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        width : 85px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .login-button:hover {
+        background-color: #357ae8;
+    }
+    
+
+
+    .search-bar {
+        width: 390px;
+        height: 44px;
+        border-radius: 30px;
+        border: 1px solid rgb(225, 225, 226);
+        outline: none;
+        padding: 0 140px 0 48px;
+        font-size: 16px;
+    }
+
+    .search-bar:hover {
+        box-shadow: 0 0 5px 1px rgb(225, 225, 226);
+    }
+
+    .search-bar:focus {
+        box-shadow: 0 0 5px 1px rgb(225, 225, 226);
+    }
+
+    .search-icon {
+        position: absolute;
+        margin: 13px 17px;
+        color: rgb(154,160,166);
+        font-size: 14px;
+    }
+
+    .keyboard-icon {
+        position: absolute;
+        margin: 13px 505px;
+        font-size: 16px;
+        color: rgb(123,123,123);
+    }
+
+    .microphone-icon {
+        position: absolute;
+        margin: 10px 545px;
+        font-size: 18px;
+        color: rgb(66,133,244);
+    }
 
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
 </head>
 
 
 <body>
     
-    <span>Google 정보</span>
-    <span>스토어</span>
-    <span>Gmail</span>
-    <span>이미지</span>
-    <span>Google 정보</span>
-    <span>로그인</span>
+    <nav class="navbar">
+        <div class="navbar-right">
+            <a href="#">Gmail</a>
+            <a href="#">이미지</a>
+        </div>
+        <div class="navbar-right">
+            <div class="apps-icon"></div>
+            <button class="login-button">로그인</button>
+        </div>
+    </nav>
 
     <h1>
         <span style ="color:#4285F4 ">G</span>
@@ -67,11 +171,18 @@
         <span style ="color: #EA4335">e</span>
     </h1>
     <div style="text-align: center">
-        <input type="text">
+        <!-- <input type="text"> -->
+        <div class="search-box">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+            <span class="keyboard-icon"><i class="far fa-keyboard"></i></span>
+            <span class="microphone-icon"><i class="fas fa-microphone"></i></span>
+            <!-- <button class="clear-btn"><i class="fas fa-times"></i></button> -->
+            <input class="search-bar" type="text">
+          </div>
     </div>
     <div class = "button-box">
-        <button style = "margin: 5px">Google 검색 </button>
-        <button style = "margin: 5px">I'm Feeling Luckey</button>
+        <button class = "under-input" style = "margin: 5px">Google 검색 </button>
+        <button class = "under-input" style = "width: 150px">I'm Feeling Luckey</button>
     </div>
     
 </body>
