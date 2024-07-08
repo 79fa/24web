@@ -3,148 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1 {
-            text-align: center;
-            margin-top: 170px;
-            font-family:'Roboto';
-            font-style: normal; 
-            font-weight:400;
-            font-size:90px; 
-            line-height:105px; 
-            text-align:center;  
-            letter-spacing: -10px;
-        }
-
-
-        
-        input{
-            width: 390px;
-            height: 44px;
-            border-radius: 30px;
-            border: 1px solid rgb(225, 225, 225);
-            outline: none;
-            padding: 0 140px 0 48px;
-            font-size: 16px;
-        }
-        input:hover{
-            box-shadow: 1px 1px 5px gray;
-        }
-        .under-input{
-            width: 111px;
-            height: 36px;
-            left: 471px;
-            top: 430px;
-
-            background: #F8F9FA;
-            border: 1px solid #F8F9FA; 
-            border-radius:4px; 
-            cursor:pointer; 
-        }
-        
-        .under-input:hover{
-            /*border-style:solid;
-            border-color:black;
-            border-width: 1px;*/
-            box-shadow: 0.5px 0.5px 5px gray;
-        }
-        .button-box{
-            display : flex; 
-            justify-content: center;
-            margin-top:26px;
-            align-items: center;
-        }
-        li{
-            display:inline;
-            float:right;
-            margin-right:5px;
-        }
-
-        .google-app {
-            font-size: 17px;
-            color: rgb(95,99,104); /* 아이콘의 색 */
-            padding: 10px 11px; /* hover에서 뒷배경 사이즈, 가로 세로 비율 맞추려고 10, 11 */
-            border-radius: 50%; /* hover에서 뒷배경 원 설정 */
-        }
-        
-
-    .navbar {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: white;
-        /* border-bottom: 1px solid #e0e0e0; */
-    }
-
-    .navbar-right a {
-        margin-right: 20px;
-        text-decoration: none;
-        color: #5f6368;
-        font-size: 14px;
-    }
-    .navbar-right a:hover{
-        text-decoration: underline;
-
-    }
-    .login-button {
-        background-color: #4285f4;
-        color: white;
-        border: none;
-        width : 85px;
-        padding: 10px 20px;
-        border-radius: 30px;
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    .login-button:hover {
-        background-color: #357ae8;
-    }
+    <title>Googlee</title>
     
-
-
-    .search-bar {
-        width: 390px;
-        height: 44px;
-        border-radius: 30px;
-        border: 1px solid rgb(225, 225, 226);
-        outline: none;
-        padding: 0 140px 0 48px;
-        font-size: 16px;
-    }
-
-    .search-bar:hover {
-        box-shadow: 0 0 5px 1px rgb(225, 225, 226);
-    }
-
-    .search-bar:focus {
-        box-shadow: 0 0 5px 1px rgb(225, 225, 226);
-    }
-
-    .search-icon {
-        position: absolute;
-        margin: 13px 17px;
-        color: rgb(154,160,166);
-        font-size: 14px;
-    }
-
-    .keyboard-icon {
-        position: absolute;
-        margin: 13px 505px;
-        font-size: 16px;
-        color: rgb(123,123,123);
-    }
-
-    .microphone-icon {
-        position: absolute;
-        margin: 10px 545px;
-        font-size: 18px;
-        color: rgb(66,133,244);
-    }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
 </head>
 
@@ -171,13 +32,11 @@
         <span style ="color: #EA4335">e</span>
     </h1>
     <div style="text-align: center">
-        <!-- <input type="text"> -->
         <div class="search-box">
             <span class="search-icon"><i class="fas fa-search"></i></span>
             <span class="keyboard-icon"><i class="far fa-keyboard"></i></span>
             <span class="microphone-icon"><i class="fas fa-microphone"></i></span>
-            <!-- <button class="clear-btn"><i class="fas fa-times"></i></button> -->
-            <input class="search-bar" type="text">
+            <input class="search-bar" type="text"> 
           </div>
     </div>
     <div class = "button-box">
