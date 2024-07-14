@@ -9,16 +9,19 @@
     <style>
 
 
-        /* h2{
-            color: white; 
-        } */
+        h2.con3{
+            color: #585F69; 
+            font-size: 22px;
+        }
     </style>
 </head>
 <body>
     <div class = "top-bar">
         <ul class = "pull-right">
             <a class = "right">22000776</a>
+            <span class="separator"></span>
             <a class = "right">설정</a>
+            <span class="separator"></span>
             <a class = "right">로그아웃</a>
             <span></span>
         </ul>
@@ -28,7 +31,7 @@
             <img style = "width:250px" src="https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png" class="img-fluid" alt="...">
         </a>
     </div>
-
+    
     <nav class="navbar navbar-expand-lg bg-body-tertiary1" style = "background-color: white;">
             <ul class="navbar-nav" style = "background-color: white">
                 <li class="nav-item dropdown">
@@ -79,8 +82,8 @@
 
     <div class="container">
         <div class = "col">
-            <a class = "col4" style="color: white; background-color: blue">2557번</a>
-            <a class = "col4">제출</a>
+            <a class = "col4" style="color: white; background-color: #428BCA">2557번</a>
+            <a class = "col4" href="/submit.html">제출</a>
             <a class = "col4">맞힌 사람</a>
             <a class = "col4">숏코딩</a>
             <a class = "col4">재채점 결과</a>
@@ -91,6 +94,8 @@
             <h1>
                 <span id = "problem-title">Hello World</span>
             </h1>
+            <hr width = "100%" color = "gray">
+
         </div>
         <div class = "col">
             <table class="table" id="problem-info">
@@ -118,33 +123,53 @@
         </div>
 
         <div class = "col">
-            <h2>문제</h2>
+            <h2 class ="con3">문제</h2>
+            <div class="line-container">
+                <div class="blue-line"></div>
+                <div class="white-line"></div>
+            </div>
             <p>Hello World!를 출력하시오.</p>
         </div>
 
         <div class = "col">
-            <h2>입력</h2>
+            <h2 class ="con3">입력</h2>
+            <div class="blue-line"></div>
+            <div class="white-line"></div>
             <p>없음</p>
         </div>
 
         <div class = "col">
-            <h2>출력</h2>
+            <h2 class ="con3">출력</h2>
+            <div class="blue-line"></div>
+            <div class="white-line"></div>
             <p>Hello World!를 출력하시오.</p>
         </div>
 
-        <div class = "col 6">
-            <h2>예제 입력1
-                <button>복사</button>
-            </h2>
-            <pre></pre>
-        </div>
+        <div class="container text-cent22er1">
+            <div class = "row">
+                <div class = "col 6" >
+                    <h2 class = "example" style = "display:left">예제 입력1
+                        <button class = "copy">복사</button>
+                    </h2>
+                    <div class="blue-line2"></div>
+                    <div class="white-line"></div>
+                    <pre class = "sampledata"></pre>
+                </div>
 
-        <div class = "col 6">
-            <h2>예제 출력1   
-                <button>복사</button>
-            </h2>
-            <pre>Hello World!</pre>
+                <div class = "col 6">
+                    <h2 class = "example">예제 출력1   
+                        <button class ="copy">복사</button>
+                    </h2>
+                    <div class="blue-line2"></div>
+                    <div class="white-line"></div>
+                    <pre class = "sampledata">Hello World!</pre>
+                </div>
+
+            </div>
         </div>
+        
+
+        
 
     </div>
 
