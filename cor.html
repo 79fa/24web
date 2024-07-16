@@ -85,73 +85,68 @@
     <div class="container">
         <div class = "col">
             <a class = "col4" >2557번</a>
-            <a class = "col4" style="color: white; background-color: #428BCA">제출</a>
+            <a class = "col4">제출</a>
             <a class = "col4">맞힌 사람</a>
             <a class = "col4">숏코딩</a>
             <a class = "col4">재채점 결과</a>
             <a class = "col4">채점 현황</a>
-            <a class = "col4">내 제출</a>
+            <a class = "col4" style="color: white; background-color: #428BCA">내 제출</a>
             <a class = "col4">질문 게시판</a>
         </div>
-        <div class = "col">
-            <h1>
-                <span id = "problem-title">Hello World</span>
-            </h1>
-            <hr width = "100%" color = "gray">
 
-        </div>
-        <div class ="col">
-          <div class="form-group">
-            <label class="lab">언어</label>
-            <select id="language" style="margin-left: 75px;">
-                <option value="cpp17">C++17</option>
-                <option>Python 3</option>
-                <option>PyPy3</option>
-                <option>C99</option>
-                <option>Java 11</option>
-                <option>Ruby</option>
-                <option>Kotlin(JVM)</option>
-                <option>Swift</option>
-                <option>Text</option>
+
+
+        <div class="filter-container">
+            <input type="text" placeholder="2557" class="filter-input">
+            <input type="text" placeholder="22000776" class="filter-input">
+            <select class="filter-select">
+                <option value="">모든 언어</option>
+                <option value="cpp11">C++11</option>
+                <option value="cpp14">C++14</option>
+                <option value="cpp17" selected>C++17</option>
+                <option value="cpp20">C++20</option>
             </select>
-          </div>
-          <br>
-          <br>
+            <select class="filter-select">
+                <option value="">모든 결과</option>
+                <option value="correct">맞았습니다!!</option>
+                <option value="wrong">틀렸습니다</option>
+            </select>
+            <button class="filter-button">검색</button>
+        </div>
 
-          <div class = "form group">
-           
-            <!-- <div class = "col 10"> -->
-                <label class = "lab">소스 코드 공개</label>
-                <div class = "label">
-                    <label>
-                        <input type="radio" name="code_open" style = "margin-left: 12.5px;">
-                        공개 
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name = "code_open" style = "margin-left: 105.5px;">
-                        비공개
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name = "code_open" style = "margin-left: 105.5px;">
-                        맞았을 때만 공개 
-                    </label>
-                </div>
-            <!-- </div> -->
-          </div>
-          <br>
 
-          <div class = "from group">
-            <label class = "lab">소스 코드</label>
-            <br>
-            <textarea id="source_code" rows="10"></textarea>
-            <br>
-            <button class = "submit" >제출 
-            </button>
-          </div>
+        <table class="result-table">
+            <thead>
+                <tr>
+                    <th>제출 번호</th>
+                    <th>아이디</th>
+                    <th>문제</th>
+                    <th>결과</th>
+                    <th>메모리</th>
+                    <th>시간</th>
+                    <th>언어</th>
+                    <th>코드 길이</th>
+                    <th>제출한 시간</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>43776290</td>
+                    <td><a href="#">22000776</a></td>
+                    <td><a href="#" style="font-weight: bold; color:green">2557</a></td>
+                    <td class="result-correct">맞았습니다!</td>
+                    <td>2020 <a style="color:red">KB</a></td>
+                    <td>0 <a style="color:red">ms</a></td>
+                    <td><a href="#">C++17</a>/<a href="#">수정</a> </td>
+                    <td>82 <a style="color:red">B</a></td>
+                    <td>
+                        <a href="#">2년 전
+
+                        </a></td>
+                </tr>
+            </tbody>
+        </table>
+        
 
 
 
@@ -161,7 +156,7 @@
         </div>
         <div class = "footer" style = " background-color: #252525;">
           <div class = "col 3" sytle = "te">
-              <h2>Baekjoon Online Judge</h2>
+              <h2 style="color:white">Baekjoon Online Judge</h2>
           </div>
         </div>
 

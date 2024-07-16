@@ -152,3 +152,108 @@ th{
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
+
+label.radi{
+    display:inline;
+}
+
+.label{
+    display:inline;
+}
+
+#source_code {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left :100px;
+}
+
+select{
+    /* background-color;  */
+    margin-left : 300px;
+
+}
+
+
+label.lab{
+    display: inline-block;
+    font-weight: 700;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.submit{
+    background-color:#428BCA; 
+    color:white;
+    border:none;
+    margin-left: 100px;
+}
+
+.submit:hover{
+    background-color:#346997; 
+   
+}
+
+
+/* 여기부터 chatgpt */
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
+
+.filter-input, .filter-select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+}
+
+.filter-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #428BCA;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.result-table td {
+    background-color: #f4f4f4;
+}
+
+.result-correct {
+    color: green; 
+    font-weight: bold;
+}
+
+.result-table a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.result-table a:hover {
+    text-decoration: underline;
+}

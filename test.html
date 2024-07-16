@@ -1,60 +1,121 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Hover Underline</title>
+    <title>Table and Filters Example</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
      <style>
-        /* styles.css */
-
-body {
+        body {
     font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
-.navbar {
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.filter-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.navbar ul li {
-    margin: 0 15px;
+.filter-input, .filter-select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.navbar ul li a {
+.filter-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.result-table th {
+    background-color: #f4f4f4;
+}
+
+.result-correct {
+    color: green;
+}
+
+.result-table a {
+    color: #007BFF;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    position: relative;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
 }
 
-.navbar ul li a:hover {
-    border-bottom-color: blue;
+.result-table a:hover {
+    text-decoration: underline;
 }
 
      </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">문제</a></li>
-            <li><a href="#">문제집</a></li>
-            <li><a href="#">대회<span class="badge">2</span></a></li>
-            <li><a href="#">채점 현황</a></li>
-            <li><a href="#">랭킹</a></li>
-            <li><a href="#">게시판</a></li>
-            <li><a href="#">그룹</a></li>
-            <li><a href="#">더 보기</a></li>
+    <div class="filter-container">
+        <input type="text" placeholder="2557" class="filter-input">
+        <input type="text" placeholder="hasyhasy2001" class="filter-input">
+        <select class="filter-select">
+            <option value="">모든 언어</option>
+            <option value="cpp11">C++11</option>
+            <option value="cpp14">C++14</option>
+            <option value="cpp17" selected>C++17</option>
+            <option value="cpp20">C++20</option>
+        </select>
+        <select class="filter-select">
+            <option value="">모든 결과</option>
+            <option value="correct">맞았습니다!!</option>
+            <option value="wrong">틀렸습니다</option>
+        </select>
+        <button class="filter-button">검색</button>
+    </div>
+
+    <table class="result-table">
+        <thead>
+            <tr>
+                <th>제출 번호</th>
+                <th>아이디</th>
+                <th>문제</th>
+                <th>결과</th>
+                <th>메모리</th>
+                <th>시간</th>
+                <th>언어</th>
+                <th>코드 길이</th>
+                <th>제출한 시간</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>43776290</td>
+                <td><a href="#">hasyhasy2001</a></td>
+                <td><a href="#">2557</a></td>
+                <td class="result-correct">맞았습니다!</td>
+                <td>2020 KB</td>
+                <td>0 ms</td>
+                <td><a href="#">C++17 / 수정</a></td>
+                <td>82 B</td>
+                <td>2년 전</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
